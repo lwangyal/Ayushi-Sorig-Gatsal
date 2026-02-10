@@ -107,10 +107,36 @@
     .testimonial span{font-size:.85rem;color:var(--muted)}
     .stars{color:#fbbf24;margin:6px 0}
 
-    /* Contact */
-    .contact-grid{
-      display:grid;grid-template-columns:1fr 1fr;gap:40px
-    }
+    p {
+  margin-bottom: 14px;
+}
+
+p strong {
+  font-weight: 600;
+  color: #1f2933;
+}
+
+p span {
+  font-weight: 400;
+  color: #6b7280;
+}
+
+/* Tap-to-call phone styling */
+.phone-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2f8f9d;
+}
+
+.phone-link:hover {
+  text-decoration: underline;
+}
+
+/* Soft red CLOSED label */
+.closed {
+  font-weight: 600;
+  color: #d9534f; /* soft medical red */
+}
 
     iframe{width:100%;border:0;border-radius:var(--radius);height:320px}
 
@@ -312,17 +338,28 @@
     <p class="subtitle">Easy to reach. Easy to care.</p>
     <div class="contact-grid">
       <div>
-       <p><strong>Address:</strong><span>AYUSHI SORIG GATSAL CLINIC, Buddha Temple, Pal Dechen Chokorling Kagyu Monastery, Clement Town, Dehradun, Uttarakhand 248002</span>
+       <p>
+  <strong>Address:</strong><br>
+  <span>AYUSHI SORIG GATSAL CLINIC, Buddha Temple, Pal Dechen Chokorling Kagyu Monastery, Clement Town, Dehradun, Uttarakhand 248002</span>
 </p>
 
-<p><strong>Phone:</strong> <span>8755039872</span>
+<p>
+  <strong>Phone:</strong><br>
+  <span>
+    <a href="tel:+918755039872" class="phone-link">📞 8755039872</a>
+  </span>
 </p>
 
-<p><strong>Working Hours:</strong> <span>09:00 AM – 06:00 PM</span>
+<p>
+  <strong>Working Hours:</strong><br>
+  <span>09:00 AM – 06:00 PM</span>
 </p>
 
-<p><strong>Every Second & Fourth Saturdays:</strong> <span>CLOSED</span>
+<p>
+  <strong>Every Second & Fourth Saturdays:</strong><br>
+  <span class="closed">CLOSED</span>
 </p>
+
         
       </div>
       <iframe src="https://www.google.com/maps?q=AYUSHI%20SORIG%20GATSAL%20CLINIC&output=embed"></iframe>
@@ -340,6 +377,7 @@
 
 </body>
 </html>
+
 
 
 
